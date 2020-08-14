@@ -8,10 +8,24 @@ import { Jumbotron } from "./Components/Jumbotron";
 import Contact from "./pages/Contact";
 
 function App() {
+  const navBarItems = [
+    {
+      link: "/",
+      value: "Home",
+    },
+    {
+      link: "/about",
+      value: "About",
+    },
+    {
+      link: "/contact",
+      value: "ContactUs",
+    },
+  ];
   return (
     <div>
       <div>
-        <NavBar />
+        <NavBar NavBrandValue="CodeLife" NavBrandLink="/" items={navBarItems} />
         <Jumbotron />
       </div>
       <Router>
