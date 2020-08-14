@@ -1,40 +1,26 @@
 import React from "react";
-
+import * as ReactBootStrap from "react-bootstrap";
 export const NavBar = () => (
-  <nav className="navbar bg-dark navbar-expand-lg navbar-dark  ">
-    <a className="navbar-brand" href="/">
-      CodeLife
-    </a>
-    <button
-      className="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
+  <div>
+    <ReactBootStrap.Navbar
+      collapseOnSelect
+      expand="lg"
+      bg="dark"
+      variant="dark"
     >
-      <span className="navbar-toggler-icon"></span>
-    </button>
-    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul className="navbar-nav ml-auto">
-        <li className="nav-item">
-          <a className="nav-link" href="/">
-            Home
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="/about">
-            About
-          </a>
-        </li>
-
-        <li className="nav-item">
-          <a className="nav-link" href="/contact">
-            Contact Us
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+      <ReactBootStrap.Navbar.Brand href="/">
+        CodeLife
+      </ReactBootStrap.Navbar.Brand>
+      <ReactBootStrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <ReactBootStrap.Navbar.Collapse id="responsive-navbar-nav">
+        <ReactBootStrap.Nav className="ml-auto">
+          <ReactBootStrap.Nav.Link href="/">Home</ReactBootStrap.Nav.Link>
+          <ReactBootStrap.Nav.Link href="/about">About</ReactBootStrap.Nav.Link>
+          <ReactBootStrap.Nav.Link href="/contact">
+            ContactUse
+          </ReactBootStrap.Nav.Link>
+        </ReactBootStrap.Nav>
+      </ReactBootStrap.Navbar.Collapse>
+    </ReactBootStrap.Navbar>
+  </div>
 );
