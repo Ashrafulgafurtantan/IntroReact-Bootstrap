@@ -2,6 +2,7 @@
   height: 250px;
   color: #efefef;
   font-family: "Pacifico", cursive;
+  letter-spacing: 2px;
 
   position: relative;
   background-image: url("../assets/boat.jpg");
